@@ -64,12 +64,15 @@ Use this as the first video segment before the explanation begins.
 ## Shared Presentation Rules
 
 - Put the current original problem text at the top of each explanation segment. Do not use only a short summary title such as "求方程" or "面积关系"; for example, when explaining subquestion (2), the top area should show the original text of subquestion (2), or the relevant original subpart if the explanation is split into (i), (ii).
+- Keep the top problem text readable and naturally spaced. If the original text is long, split it into multiple short lines or multiple problem-display pages; do not squeeze characters, over-compress formulas, or let text crowd the top edge.
 - Do not add meta-instructions such as "look left" or "read right".
 - Keep the screen calm, high-contrast, and classroom-friendly.
 - Use large readable text, generous spacing, and restrained colors.
 - Use consistent colors for known conditions, current variables, highlighted steps, conclusions, and contradictions.
 - Avoid showing too much at once. Hide, fade, or clear stale content before starting a new stage.
 - Keep formulas short where possible. Split long formulas or long reasoning chains into multiple steps.
+- Make explanations detailed and accurate enough for students to follow. Do not skip non-obvious algebraic transformations, geometric relations, sign conditions, or equality conditions.
+- Prefer methods and notation familiar to Chinese middle-school and high-school students. Avoid university-style notation or methods such as determinants, linear algebra, advanced calculus, measure theory, or abstract mappings unless the problem explicitly requires them or the user asks for them. When an advanced-looking idea has a high-school alternative, use the high-school version.
 - Avoid label collisions. Move labels away from curves, points, arrows, axes, shapes, and other text.
 - Do not let text touch screen edges, cross panel boundaries, or cover important graphics.
 - Make animation serve the explanation: each motion should show a relationship, transformation, comparison, or logical dependency.
@@ -105,6 +108,9 @@ Use this layout when a graph, geometric diagram, physical model, motion process,
 - Put proof ideas, derivations, formulas, and calculations on the right.
 - Show one sub-goal at a time. Clear or fade the right panel before starting the next sub-goal.
 - Use numbered steps for proofs and calculations.
+- Align numbered steps carefully: the step number and the corresponding text/formula must sit at the same visual height, with a stable number column and a stable content column.
+- Use generous and consistent line spacing. Fractions, radicals, and multi-symbol formulas need more vertical room than plain text; do not let adjacent numbered lines look compressed or misaligned.
+- If one proof or one sub-goal must be split across multiple right-panel pages, keep the numbering continuous across pages. For example, if the first page ends at step 7, the next page should begin at step 8, not step 1.
 - Highlight only the current step or the step just concluded.
 - If reasoning is long, split it into multiple screens instead of shrinking everything too much.
 
@@ -125,6 +131,7 @@ Use this layout when the problem does not need a meaningful visual model.
 - Keep one main logical thread on screen.
 - Use spacing to separate assumptions, transformations, conclusions, and side notes.
 - Split long derivations into stages. Finish one stage, then clear or fade it before the next.
+- When a single derivation is split into multiple stages, keep numbered steps continuous across stages rather than restarting from 1.
 - For classification problems, first show the classification framework, then handle each case separately.
 - For contradiction, construction, substitution, induction, or parameter methods, mark the current strategy briefly before the detailed steps.
 
@@ -142,6 +149,8 @@ Before delivering or rendering, check:
 - The chosen layout matches the problem type.
 - The top problem text is the current original subquestion, not merely a short summary title, and it is clear without crowding.
 - Conditions and target conclusions are easy to find.
+- Numbered steps have aligned number/content baselines or centers, stable spacing, and continuous numbering across pages within the same proof.
+- The solution uses high-school-accessible notation and methods unless the user explicitly approves a more advanced approach.
 - Every visual label is readable and non-overlapping.
 - The right panel or derivation board has no overflow.
 - Each stage has a single focus.
